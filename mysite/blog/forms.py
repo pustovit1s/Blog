@@ -20,3 +20,9 @@ class CommentForm(forms.ModelForm):
         """meta class for import existing comment form"""
         model = Comment
         fields = ['name', 'email', 'body']
+
+
+
+class SearchForm(forms.Form):
+    """ class for creating search form"""
+    query = forms.CharField()
